@@ -1,13 +1,13 @@
-package com.ikiseh.order;
+package com.ikiseh.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrderApplication {
+public class GatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderApplication.class, args);
+		SpringApplication.run(GatewayApplication.class, args);
 	}
 
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Confirmation</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+<h2>Hi <span th:text="${customerName}">Customer</span>,</h2>
+<p>We have received your payment of <strong>₦<span th:text="${amount}">0.00</span></strong>.</p>
+<p>Your order reference is: <strong><span th:text="${orderReference}">#REF123</span></strong>.</p>
+<p>Thank you for doing business with us!</p>
+<p>Best regards,<br>The Ikiseh Team</p>
+</body>
+</html>

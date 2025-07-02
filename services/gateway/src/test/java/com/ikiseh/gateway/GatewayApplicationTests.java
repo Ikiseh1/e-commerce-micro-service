@@ -1,10 +1,10 @@
-package com.ikiseh.order;
+package com.ikiseh.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OrderApplicationTests {
+class GatewayApplicationTests {
 
 	@Test
 	void contextLoads() {

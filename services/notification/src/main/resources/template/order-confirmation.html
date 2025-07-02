@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+<h2>Hello <span th:text="${customerName}">Customer</span>,</h2>
+<p>Your order with reference <strong><span th:text="${orderReference}">#REF123</span></strong> has been confirmed.</p>
+<p>Here are the details of your order:</p>
+
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse;">
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price (₦)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.name}">Product Name</td>
+        <td th:text="${product.quantity}">1</td>
+        <td th:text="${product.price}">0.00</td>
+    </tr>
+    </tbody>
+</table>
+
+<p style="margin-top: 20px;">Total Amount: <strong>₦<span th:text="${totalAmount}">0.00</span></strong></p>
+
+<p>We’ll notify you once your order is shipped.</p>
+<p>Thanks for shopping with us!</p>
+<p>Warm regards,<br>The Ikiseh Team</p>
+</body>
+</html>
